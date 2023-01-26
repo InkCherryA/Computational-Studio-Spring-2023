@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    border: none;
+    scrollbar-width: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    width: fit-content;
+    height: fit-content;
+}
+
+body {
+    background-color: beige;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#logo {
+    display: block;
+    padding: 20px 40px;
+    width: fit-content;
+    font-size: 24px;
+    font-weight: 600;
+    color: slategrey;
+
+}
+
+#logo:hover {
+    background-color: beige;
+    color: black
+}
+
+#header {
+    height: fit-content;
+    background-color: bisque;
+    width: 100vw;
+    position: fixed;
+    padding: auto;
+    z-index: 1;
+
+}
+
+.pages {
+    position: absolute;
+    top: 60px;
+    scroll-snap-type: y mandatory;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.page {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    scroll-snap-align: start;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
