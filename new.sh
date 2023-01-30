@@ -5,7 +5,7 @@ source ./new.bashrc
 
 y=$(printf "%04d" $currentFileIdx)
 
-# create file and update bashrc
+# create file and folder
 cp -r template p$y
 mv p$y/tmp.css p$y/$y.css
 mv p$y/tmp.html p$y/$y.html
