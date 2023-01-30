@@ -15,6 +15,3 @@ sed -i -e "s/tmp/$y/" p$y/$y.html
 currentFileIdx=$((currentFileIdx+1))
 sed -i -e "s/currentFileIdx=$(($currentFileIdx-1))/currentFileIdx=$currentFileIdx/" new.bashrc
 
-# display file create information
-y=$(printf "%04d" $currentFileIdx)
-
