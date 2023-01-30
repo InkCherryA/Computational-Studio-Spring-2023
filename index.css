@@ -42,17 +42,32 @@
 }
 
 .thumbnail {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 300px;
-    width: 300px;
+    max-height: 300px;
+    max-width: 100vh;
+    height: auto;
+    width: auto;
     z-index: 0;
 }
 
 .container {
     height: 300px;
     width: 300px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.imgWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .description {
