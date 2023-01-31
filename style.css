@@ -17,7 +17,7 @@ a {
 }
 
 body {
-    background-color: beige;
+    background-color:  #e9c9ec;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -33,18 +33,18 @@ body {
     width: fit-content;
     font-size: 24px;
     font-weight: 600;
-    color: slategrey;
+    color: white ;
 
 }
 
 #logo:hover {
-    background-color: beige;
+    background-color: #e9c9ec;
     color: black
 }
 
 #header {
     height: fit-content;
-    background-color: bisque;
+    background-color: #674064;
     width: 100vw;
     position: fixed;
     padding: auto;
