@@ -29,10 +29,6 @@
     scroll-snap-align: start;
 }
 
-.vertMedia > div {
-    max-width: 20vw;
-}
-
 .pages {
     scroll-snap-type: y mandatory;
     height: calc(100vh - 60px);
