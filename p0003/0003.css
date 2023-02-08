@@ -7,37 +7,41 @@
     margin-bottom: 20px;
 }
 
-#info {
-    max-width: min(700px, 90vw);
+.vertTxt {
+    max-width: 60vw;
+    margin-left: 2vw;
+    padding: 2vw;
+    height: 100%;
+    overflow: scroll;
+}
+
+.vertMedia {
+    width: fit-content;
     margin-left: 5vw;
+    height: 100%;
+    overflow: scroll;
 }
 
 .pages {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     height: calc(100vh - 60px);
 }
 
-#page-info {
+.page {
     padding: 50px 0;
-    background-color: rgba(119, 136, 153, 0.3);
     display: flex;
-    height: fit-content;
+    height: calc(100vh - 60px);
     flex-wrap: wrap;
     position: relative;
     width: 100vw;
 }
 
-#page-content {
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    margin: 0 10vw;
-    height: fit-content;
-    padding: 100px 0;
+.darkBG {
+    background-color: rgba(119, 136, 153, 0.3);
 }
 
 .text1 {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 600;
     color: #111;
 }
@@ -46,7 +50,6 @@
     font-size: 24px;
     font-weight: 500;
     color: #111;
-
 }
 
 .text3 {
@@ -58,8 +61,8 @@
 
 .text4 {
     font-weight: 500;
-    margin: 10px;
-    color: slategrey;
+    margin: 10px 0;
+    color: #674064;
 }
 
 .flexdiv {
@@ -87,4 +90,11 @@
 
 li {
     line-height: 1.5em;
+}
+
+.YTvid {
+    width: 30vw;
+    height: 30vw;
+    margin: 2vw 0;
+    display: block;
 }
