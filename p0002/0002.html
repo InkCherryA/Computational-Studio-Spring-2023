@@ -61,7 +61,7 @@
                 <div class="text3">
                     <span class="bold">Smooth Hand Animation</span>
                     <a href="./src/006vid.mp4"><video src="./src/006vid.mp4" autoplay loop class="vid" controls></video></a>
-                    Animation Blend
+                    Animation Blend Tree
                     <a href="./src/007img.png"><img src="./src/007img.png" alt="" class="vid"></a>
                     Input Action Asset: Hand
                     <a href="./src/008img.png"><img src="./src/008img.png" alt="" class="vid"></a>
@@ -69,39 +69,78 @@
                     <a href="./src/009img.png"><img src="./src/009img.png" alt="" class="vid"></a>
                     Input Action Asset: HandLocomotion
                     <a href="./src/010img.png"><img src="./src/010img.png" alt="" class="vid"></a>
-                    Smooth Hand Script
+                    Hand Controller Script
                     <a href="./src/016img.png"><img src="./src/016img.png" alt="" class="vid"></a>
 
                 </div>
                 <div class="text3">
                     <span class="bold">Interaction, Physics, Locomotion</span>
                     <a href="./src/011vid.mp4"><video src="./src/011vid.mp4" autoplay loop class="vid" controls></video></a>
-                    XR Origin
+                    Component on XR Origin
                     <a href="./src/012img.png"><img src="./src/012img.png" alt="" class="vid"></a>
-                    Hand Controller
+                    Component on Controller
                     <a href="./src/013img.png"><img src="./src/013img.png" alt="" class="vid"></a>
-                    Interactable
+                    Component on Interactable
                     <a href="./src/014img.png"><img src="./src/014img.png" alt="" class="vid"></a>
                 </div>
-                <div class="text3">
-                    <span class="bold">Hand Rigging</span>
-                    <a href="./src/017vid.mp4"><video src="./src/017vid.mp4" autoplay loop class="vid" controls></video></a>
-                </div>
-                <div class="text3">
-                    <span class="bold">Unity Hand Model Animation</span>
-                    <a href="./src/unity_hand_model_animation.mp4"><video src="./src/unity_hand_model_animation.mp4" autoplay loop class="vid" controls></video></a>
-                </div>
-
-
            </div>
             <div class="vertTxt">
                 <!-- Edit project title -->
-                <div class="text1">XR Interaction Toolkit</div>
+                <div class="text1">XR Interaction Toolkit: Part I</div>
                 <!-- Edit project description -->
                 <div class="text3">
-                    Following the section 2 of the course <span class="bold">VR Development Fundamentals With Oculus Quest 2 And Unity</span> on Udemy, functionality of the XR Interaction Toolkit is tested. Using the imported Harry Potter model asset, custom hand asset, and XR Interaction Toolkit sample asset, simple VR actions are implemented, such as ray grabbing, direct grabbing, joystick moving, joystick turning.
+                    Following the section 2 of the course <span class="bold">VR Development Fundamentals With Oculus Quest 2 And Unity</span> on Udemy, functionality of the XR Interaction Toolkit is tested. Using the imported Harry Potter model asset, custom hand asset, and XR Interaction Toolkit sample asset, simple VR actions are implemented, such as ray grabbing, direct grabbing, joystick moving, joystick turning. 
                     <br><br>
-                    To make the hand interaction for the game from scratch, there requires more steps. A three-fingered robotic hand is download from Turbosquid, and is rigged in blender. Next, we will import the rigged hand, along with its poses and animations, into Unity, as preparation for further integration with the VR controllers.
+                    Using the hand controller script, we are able to get float values from the VR controller device to transition smoothly between multiple poses of the hand model. This is done by implementing an animation blend tree, where four different poses are mapped onto a 2-dimensional space. The float values of the two buttons, grip and trigger, will translate as the x and y coordinate in this space. 
+                    <br><br>
+                    Using the scripts that are imported from the XR Interaction Toolkit sample asset, a locomotion system can be set up on the XR Origin (player) game object, allowing the player to move, continuous or teleport, and turn, continuous or snap, using the joysticks on the controller devices. An interaction system is also provided by the asset which allows the player to grab objects that are deemed interactable. The tutorial also explained the differences between the movement types of an interactable, instantaneous, kinematic, and velocity tracking. We are also able to control the haptic behavior of the controller through these scripts.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="page darkBG">
+            <!-- Edit project content -->
+            <div class="vertMedia">
+                <div class="text3">
+                    <span class="bold">Youbionic Claw Model</span>
+                    <a href="https://www.turbosquid.com/3d-models/3d-youbionic-claw-model-1377870"><img src="./src/019img.png" alt="" class="vid"></a>
+                </div>
+                <div class="text3">
+                    <span class="bold">Claw Rigging</span>
+                    <a href="./src/017vid.mp4"><video src="./src/017vid.mp4" autoplay loop class="vid" controls></video></a>
+                    Armature and Bone Constraints
+                    <a href="./src/020img.png"><img src="./src/020img.png" alt="" class="vid"></a>
+                    <a href="./src/021img.png"><img src="./src/021img.png" alt="" class="vid"></a>
+                    <a href="./src/022img.png"><img src="./src/022img.png" alt="" class="vid"></a>
+                    <a href="./src/023img.png"><img src="./src/023img.png" alt="" class="vid"></a>
+                    <a href="./src/024img.png"><img src="./src/024img.png" alt="" class="vid"></a>
+                    Poses
+                    <a href="./src/027img.png"><img src="./src/027img.png" alt="" class="vid"></a>
+                    <a href="./src/028img.png"><img src="./src/028img.png" alt="" class="vid"></a>
+
+
+                </div>
+                <div class="text3">
+                    <span class="bold">Animated Controller</span>
+                    <a href="./src/018vid.mp4"><video src="./src/018vid.mp4" autoplay loop class="vid" controls></video></a>
+                    Animation Blend Tree
+                    <a href="./src/025vid.mp4"><video src="./src/025vid.mp4" autoplay loop class="vid" controls></video></a>
+                    Hand Controller Script
+                    <a href="./src/026img.png"><img src="./src/026img.png" alt="" class="vid"></a>
+
+                </div>
+           </div>
+            <div class="vertTxt">
+                <!-- Edit project title -->
+                <div class="text1">XR Interaction Toolkit: Part II</div>
+                <!-- Edit project description -->
+                <div class="text3">
+                    To implement the knowledge gained from this tutorial to our own game design, we had to make some changes to the hand model. We downloaded a 3d model of a mechanical hand from Turbosquid, which is then rigged in Blender. We used the Damped Track and Limit Rotation bone constraints to make the movement of the fingers mechanically accurate. The meshes, armature, along with two poses, relaxing and grabbing, are imported into Unity through an intermediate FBX file.
+                    <br><br>
+                    Because we currently have only two poses, we are able to achieve the smooth hand animation using a 1-dimensional instead of 2-dimensional blend tree, with the grip button value as a parameter. We minimally modified the Hand Controller Script provided by the turorial to get the required value from the device.
+
+                    
                 </div>
             </div>
 
