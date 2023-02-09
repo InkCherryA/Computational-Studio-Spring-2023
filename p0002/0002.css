@@ -43,6 +43,40 @@
     width: 100vw;
 }
 
+@media (max-aspect-ratio: 1/1) {
+
+    .page{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .vertMedia {
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 10px;
+        height: calc( ( 100vh - 70px ) * 6.5/10);
+        overflow: scroll;
+        scroll-snap-type: y proximity;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vid {
+        width: 80vw !important;
+        height: auto;
+        margin: 5px 0;
+        display: block;
+    }
+
+    .vertTxt {
+        max-width: 80vw;
+        margin: 0 auto;
+        padding: 2vw;
+        height: calc( ( 100vh - 60px ) * 3/10);
+        overflow: scroll;
+    }
+}
+
 .darkBG {
     background-color: rgba(119, 136, 153, 0.3);
 }
