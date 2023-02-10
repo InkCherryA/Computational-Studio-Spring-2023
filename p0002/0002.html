@@ -142,6 +142,98 @@
 
                 </div>
             </div>
+        <div class="page">
+            <!-- Edit project content -->
+            <div class="vertMedia">
+                <div class="text3">
+                    <span class="bold">Udemy Course Description</span>
+                    <a href="./src/015img.png"><img src="./src/015img.png" alt="" class="vid"></a>
+                    Section Outline
+                    <a href="./src/005img.png"><img src="./src/005img.png" alt="" class="vid"></a>
+                </div>
+                <div class="text3">
+                    <span class="bold">Smooth Hand Animation</span>
+                    <a href="./src/006vid.mp4"><video src="./src/006vid.mp4" autoplay loop class="vid" controls></video></a>
+                    Animation Blend Tree
+                    <a href="./src/007img.png"><img src="./src/007img.png" alt="" class="vid"></a>
+                    Input Action Asset: Hand
+                    <a href="./src/008img.png"><img src="./src/008img.png" alt="" class="vid"></a>
+                    Input Action Asset: HandInteraction
+                    <a href="./src/009img.png"><img src="./src/009img.png" alt="" class="vid"></a>
+                    Input Action Asset: HandLocomotion
+                    <a href="./src/010img.png"><img src="./src/010img.png" alt="" class="vid"></a>
+                    Hand Controller Script
+                    <a href="./src/016img.png"><img src="./src/016img.png" alt="" class="vid"></a>
+
+                </div>
+                <div class="text3">
+                    <span class="bold">Interaction, Physics, Locomotion</span>
+                    <a href="./src/011vid.mp4"><video src="./src/011vid.mp4" autoplay loop class="vid" controls></video></a>
+                    Component on XR Origin
+                    <a href="./src/012img.png"><img src="./src/012img.png" alt="" class="vid"></a>
+                    Component on Controller
+                    <a href="./src/013img.png"><img src="./src/013img.png" alt="" class="vid"></a>
+                    Component on Interactable
+                    <a href="./src/014img.png"><img src="./src/014img.png" alt="" class="vid"></a>
+                </div>
+           </div>
+            <div class="vertTxt">
+                <!-- Edit project title -->
+                <div class="text1">XR Interaction Toolkit: Part I</div>
+                <!-- Edit project description -->
+                <div class="text3">
+                    Following the section 2 of the course <span class="bold">VR Development Fundamentals With Oculus Quest 2 And Unity</span> on Udemy, functionality of the XR Interaction Toolkit is tested. Using the imported Harry Potter model asset, custom hand asset, and XR Interaction Toolkit sample asset, simple VR actions are implemented, such as ray grabbing, direct grabbing, joystick moving, joystick turning. 
+                    <br><br>
+                    Using the hand controller script, we are able to get float values from the VR controller device to transition smoothly between multiple poses of the hand model. This is done by implementing an animation blend tree, where four different poses are mapped onto a 2-dimensional space. The float values of the two buttons, grip and trigger, will translate as the x and y coordinate in this space. 
+                    <br><br>
+                    Using the scripts that are imported from the XR Interaction Toolkit sample asset, a locomotion system can be set up on the XR Origin (player) game object, allowing the player to move, continuous or teleport, and turn, continuous or snap, using the joysticks on the controller devices. An interaction system is also provided by the asset which allows the player to grab objects that are deemed interactable. The tutorial also explained the differences between the movement types of an interactable, instantaneous, kinematic, and velocity tracking. We are also able to control the haptic behavior of the controller through these scripts.
+                </div>
+            </div>
+
+        </div>
+        </div>
+                <div class="page">
+            <!-- Edit project content -->
+            <div class="vertMedia">
+                <div class="text3">
+                    <span class="bold">Filter and controller in preset </span>
+                    <a href="p0002\src\Image_20230210132108.png">
+                        <img src="./src/Image_20230210132108.png" alt="" class="vid">
+                    </a>
+                    <span class="bold">Input action map</span>
+                    <a href="p0002\src\Image_20230210132822.png">
+                        <img src="./src/Image_20230210132822.png" alt="" class="vid">
+                    </a>
+                    <span class="bold">Controller action reference</span>
+                    <a href="p0002\src\Image_20230210133015.png">
+                        <img src="./src/Image_20230210133015.png" alt="" class="vid">
+                    </a>
+                </div>
+           </div>
+            <div class="vertTxt">
+                <!-- Edit project title -->
+                <div class="text1">XR Interaction Toolkit: Input Irresponsive Debug</div>
+                <!-- Edit project description -->
+                <div class="text3">
+                    While inplementing the basic grabbing function, I run into a problem.
+                    the XR Grab Interactable component does not react to the input from the controller.
+                    <br><br>
+                    I have tried to debug the problem by checking the input action asset,
+                     the input action map, and the input action.
+                    <br><br>
+                    There are several things I end up fixing:
+                    <ul>
+                        <li>The filter and controller in preset manager, it was not set up.</li>
+                        <li>The input action map was taking pointer position as its input, I have to change it to device input in order
+                            to get the input from the controller.
+                        </li>
+                        <li>GameObject left and right hand controller does not bind with input action reference, so I have to recreate
+                            after the preset manager is set up.
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
 
         </div>
         </div>
