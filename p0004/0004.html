@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Edit page title -->
+    <title>Unity VR Integration</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Edit style sheet link -->
+    <link rel="stylesheet" href="./0004.css">
+</head>
+<body>
+    <div id="header">
+        <!-- Edit site title -->
+        <a href="../index.html" id="logo">Simulated | Spring 2023</a>    
+    </div>
+    <div class="pages">
+
+        <div class="page darkBG">
+            <!-- Edit project content -->
+            <div class="vertMedia">
+                <div class="text3">
+                    <span class="bold">Udemy Course Description</span>
+                    <a href="./src/001img.png"><img src="./src/001img.png" alt="" class="vid"></a>
+                    Section Outline
+                    <a href="./src/002img.png"><img src="./src/002img.png" alt="" class="vid"></a>
+                </div>
+           </div>
+            <div class="vertTxt">
+                <!-- Edit project title -->
+                <div class="text1">Rendering in Unity: Part I</div>
+                <!-- Edit project description -->
+                <div class="text3">
+                    Following the course <span class="bold">Unity Tech Art: Realistic Lighting For Game Development</span> on Udemy, we learned the basics of lighting in Unity, including lights, emissive materials, realtime and baked global illumination, skyboxes, probes, volumes, post-processing, scriptable render pipelines, and shader graphs.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="page">
+            <!-- Edit project content -->
+            <div class="vertMedia">
+                <div class="text3">
+                    <span class="bold">Modeling from Concept Map</span>
+                    <a href="./src/006img.png"><img src="./src/006img.png" alt="" class="vid"></a>
+                </div>
+                <div class="text3">
+                    <span class="bold">Global Light Settings</span>
+                    <a href="./src/004img.png"><img src="./src/004img.png" alt="" class="vid"></a>
+                    <a href="./src/019img.png"><img src="./src/019img.png" alt="" class="vid"></a>
+                </div>
+                <div class="text3">
+                    <span class="bold">Procedural Shader</span>
+                    <br>
+                    Blender
+                    <a href="./src/012img.png"><img src="./src/012img.png" alt="" class="vid"></a>
+                    Wall
+                    <a href="./src/007img.png"><img src="./src/007img.png" alt="" class="vid"></a>
+                    Floor
+                    <a href="./src/008img.png"><img src="./src/008img.png" alt="" class="vid"></a>
+                    Unity
+                    <a href="./src/009img.png"><img src="./src/009img.png" alt="" class="vid"></a>
+                    Wall
+                    <a href="./src/011img.png"><img src="./src/011img.png" alt="" class="vid"></a>
+                    Floor
+                    <a href="./src/010img.png"><img src="./src/010img.png" alt="" class="vid"></a>
+                </div>
+                <div class="text3">
+                    <span class="bold">Emissive Material</span>
+                    <a href="./src/005img.png"><img src="./src/005img.png" alt="" class="vid"></a>
+                </div>
+                <div class="text3">
+                    <span class="bold">Baked Lightmaps</span>
+                    <br>
+                    Wall
+                    <a href="./src/013img.png"><img src="./src/013img.png" alt="" class="vid"></a>
+                    Floor
+                    <a href="./src/014img.png"><img src="./src/014img.png" alt="" class="vid"></a>
+                </div>
+                <div class="text3">
+                    <span class="bold">Render Pipelines</span>
+                    <br>
+                    Standard
+                    <a href="./src/015img.png"><img src="./src/015img.png" alt="" class="vid"></a>
+                    Universal
+                    <a href="./src/009img.png"><img src="./src/009img.png" alt="" class="vid"></a>
+                </div>
+                <div class="text3">
+                    <span class="bold">Post Processing</span>
+                    <br>
+                    Standard
+                    <a href="./src/016img.png"><img src="./src/016img.png" alt="" class="vid"></a>
+                    Universal
+                    <a href="./src/017img.png"><img src="./src/017img.png" alt="" class="vid"></a>
+                </div>
+                <div class="text3">
+                    <span class="bold">Reflection Probe</span>
+                    <a href="./src/018img.png"><img src="./src/018img.png" alt="" class="vid"></a>
+                </div>
+
+            </div>
+            <div class="vertTxt">
+                <!-- Edit project title -->
+                <div class="text1">Rendering in Unity: Part II</div>
+                <!-- Edit project description -->
+                <div class="text3">
+                    We modeled the rough geometry, wall and floor, of the room in Blender, based on the selected concept map that was generated by Midjourney. We then imported the mesh into Unity through an FBX file.
+                    <br><br>
+                    We configured the scene and environment tabs in the lighting window. We enabled baked global illumination, tweaked the lightmap resolution, and disabled all existing environment lighting to isolate effects of the scene lighting.
+                    <br><br>
+                    We also tested the procedual texture generation in both Blender and Unity. In Blender, this can be achieved simply through the shader nodes that is avaiable, while in Unity, we must first replace the standard render pipeline with either universal render pipeline (URP) or high-definition render pipeline (HDRP). After that, custom shader graphs can be applied to materials. For the wall, we are trying to create metallic panels that have vertical grains of reflectivity. For the floor, we want simple tiles that vary in color.
+                    <br><br>
+                    We created several light sources using geometries with emissive materials. The indirect lighting information are then baked onto the wall and floor, generating lightmaps corresponding to the unwrapped UV map exported from Blender.
+                    <br><br>
+                    We compared results of the standard and universal render pipeline. We were not able to use procedurally generated shader materials in the standard RP. To add a bloom effect to the scene, we used the post-process volume, and the global volume for the two RPs respectively. In order for the reflective wall material to show up, we had to add a reflection probe to the URP version.
+                </div>
+            </div>
+        </div>
+    </div>
+   </body>
+</html>
