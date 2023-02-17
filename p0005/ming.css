@@ -1,0 +1,24 @@
+.flexdiv > a
+{
+    width: 100%;
+}
+
+.flexdiv > * {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    max-width: 500px;
+}
+
+#page-content{
+    max-width: 800px;
+}
+.pages{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
