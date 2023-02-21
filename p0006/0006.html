@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Edit page title -->
+    <title>Character Empathy</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Edit style sheet link -->
+    <link rel="stylesheet" href="./0006.css">
+    <link rel="stylesheet" href="./ming.css">
+</head>
+<body>
+    <div id="header">
+            <!-- Edit site title -->
+        <a href="../index.html" id="logo">Simulated | Spring 2023</a>
+    </div>
+    <div class="pages">
+        <div id="page-info" class="page">
+            <!-- Edit project cover -->
+            <a href="./src/000img.png"><img src="./src/000img.png" alt="" class="thumbnail"></a>
+            <div id="info">
+                <!-- Edit project title -->
+                <h1>Character Empathy</h1>
+                <!-- Edit project description -->
+                <div class="text3">
+                    Virtual reality has revolutionized the way we experience 
+                    gaming, providing an immersive 
+                    experience that was once thought impossible. However,
+                     one of the challenges that developers face when designing VR
+                      games is creating a strong emotional connection between the
+                       player and the in-game character. Our team has been 
+                       working on a solution to this problem by implementing more
+                        realistic feeling through VR controller constraints. 
+                        By constraining the player's movement and actions to 
+                        mimic those of the in-game character, we hope to create 
+                        a stronger sense of empathy between the player and the 
+                        character. This approach aims to make the player feel 
+                        more connected to the game world, making their experience
+                         more engaging and meaningful. We believe that this 
+                         innovation has the potential to enhance the emotional 
+                         impact of VR games and create a new level of immersion 
+                         for players.
+                </div>
+            </div>
+           
+        </div>
+
+        <div id="page-content" class="page">
+            <h2>Damaged Eye</h2>
+            <!-- Edit project content -->
+            <div class="text3">
+                <span class="bold">Reason</span>
+                <br><br>
+                Our Character robot will start with only one eye, and later on, 
+                the player will have to find a way to get the other eye back to
+                unlock the full sight, otherwise the player will experience
+                a limited sight through VR HeadSet.
+            </div>
+
+            <div class="flexdiv">
+                <a href="./src/001img.png"><img src="./src/001img.png" alt="" class="flexchild"></a>
+            </div>
+
+            <div class="text3">
+                <span class="bold">How to implement</span>
+                <br><br>
+                To have one missing eye, we will have to use 2 cameras instead of one
+                to mimic the missing eye. Each camera will be set to target an eye.
+                <br><br>
+                for the missing eye, wewill first need to set "Clear Flags" to "Solid Color"
+                and set the color to black. Then we will need to set the "Culling Mask" to
+                "Nothing" to make sure the camera will not render anything.
+                <br><br>
+                Later when we get the missing eye back we will set "Clear Flags" to
+                "Skybox" and set the "Culling Mask" to "Everything" to make sure the camera
+                will render everything.
+            </div>
+
+            <div class="flexdiv">
+                <a href="./src/002img.png"><img src="./src/002img.png" alt="" class="flexchild"></a>
+                <a href="./src/003img.png"><img src="./src/003img.png" alt="" class="flexchild"></a>
+            </div>
+        </div>
+        </div>
+    </div>
+   </body>
+</html>
