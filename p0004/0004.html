@@ -98,6 +98,29 @@
                     <span class="bold">Reflection Probe</span>
                     <a href="./src/018img.png"><img src="./src/018img.png" alt="" class="vid"></a>
                 </div>
+                <div class="text3">
+                    <span class="bold">Baked Texture</span>
+                    <a href="./src/027img.png"><img src="./src/027img.png" alt="" class="vid"></a>
+                    Custom Shader Graph
+                    <a href="./src/026img.png"><img src="./src/026img.png" alt="" class="vid"></a>
+                    Wall
+                    <a href="./src/028img.png"><img src="./src/028img.png" alt="" class="vid"></a>
+                    Wall: diffuse
+                    <a href="./src/023img.png"><img src="./src/023img.png" alt="" class="vid"></a>
+                    Wall: normal
+                    <a href="./src/024img.png"><img src="./src/024img.png" alt="" class="vid"></a>
+                    Wall: roughness
+                    <a href="./src/025img.png"><img src="./src/025img.png" alt="" class="vid"></a>
+                    Wall
+                    <a href="./src/029img.png"><img src="./src/029img.png" alt="" class="vid"></a>
+                    Floor: diffuse
+                    <a href="./src/020img.png"><img src="./src/020img.png" alt="" class="vid"></a>
+                    Floor: normal
+                    <a href="./src/021img.png"><img src="./src/021img.png" alt="" class="vid"></a>
+                    Floor: roughness
+                    <a href="./src/022img.png"><img src="./src/022img.png" alt="" class="vid"></a>
+                </div>
+                
 
             </div>
             <div class="vertTxt">
@@ -114,6 +137,8 @@
                     We created several light sources using geometries with emissive materials. The indirect lighting information are then baked onto the wall and floor, generating lightmaps corresponding to the unwrapped UV map exported from Blender.
                     <br><br>
                     We compared results of the standard and universal render pipeline. We were not able to use procedurally generated shader materials in the standard RP. To add a bloom effect to the scene, we used the post-process volume, and the global volume for the two RPs respectively. In order for the reflective wall material to show up, we had to add a reflection probe to the URP version.
+                    <br><br>
+                    Later, we decided to use the procedually generated texture from Blender. We baked the textures, diffuse, normal, and roughness, into images, and applied them onto the game objects using a custom shader graph.
                 </div>
             </div>
         </div>
