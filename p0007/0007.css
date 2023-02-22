@@ -1,0 +1,141 @@
+
+
+.thumbnail {
+    width: 300px;
+    height: 300px;
+    margin-left: 5vw;
+    margin-bottom: 20px;
+}
+
+.vertTxt {
+    max-width: 60vw;
+    margin-left: 2vw;
+    padding: 2vw;
+    height: 100%;
+    overflow: scroll;
+}
+
+.vertMedia {
+    width: fit-content;
+    margin-left: 5vw;
+    height: 100%;
+    overflow: scroll;
+    scroll-snap-type: y proximity;
+    display: flex;
+    flex-direction: column;
+}
+
+.vertMedia > * {
+    scroll-snap-align: start;
+}
+
+.pages {
+    scroll-snap-type: y mandatory;
+    height: calc(100vh - 60px);
+}
+
+.page {
+    padding: 50px 0;
+    display: flex;
+    height: calc(100vh - 60px);
+    flex-wrap: wrap;
+    position: relative;
+    width: 100vw;
+}
+
+@media (max-aspect-ratio: 1/1) {
+
+    .page{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .vertMedia {
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 10px;
+        height: calc( ( 100vh - 70px ) * 6.5/10);
+        overflow: scroll;
+        scroll-snap-type: y proximity;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vid {
+        width: 80vw !important;
+        height: auto;
+        margin: 5px 0;
+        display: block;
+    }
+
+    .vertTxt {
+        max-width: 80vw;
+        margin: 0 auto;
+        padding: 2vw;
+        height: calc( ( 100vh - 60px ) * 3/10);
+        overflow: scroll;
+    }
+}
+
+.darkBG {
+    background-color: rgba(119, 136, 153, 0.3);
+}
+
+.text1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+}
+
+.text2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+}
+
+.text3 {
+    font-weight: 300;
+    color: #111;
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+.text4 {
+    font-weight: 500;
+    margin: 10px 0;
+    color: #674064;
+}
+
+.flexdiv {
+    display: flex;
+    padding: 10px 0;
+    height: fit-content;
+    justify-content: center;
+}
+
+.flexchild {
+    height: auto;
+    width: 100%;
+    padding: 2%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-content {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+li {
+    line-height: 1.5em;
+}
+
+.vid {
+    width: 30vw;
+    height: auto;
+    margin: 5px 0;
+    display: block;
+}

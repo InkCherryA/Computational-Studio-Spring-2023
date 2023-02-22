@@ -13,67 +13,41 @@
 </head>
 <body>
     <div id="header">
-        <!-- Edit site title -->
+            <!-- Edit site title -->
         <a href="../index.html" id="logo">Simulated | Spring 2023</a>
     </div>
     <div class="pages">
         <div id="page-info" class="page">
-            <!-- Edit project cover -->
-            <a href="./src/000img.jpg"><img src="./src/000img.jpg" alt="" class="thumbnail"></a>
             <div id="info">
-                <!-- Edit project title -->
                 <div class="text1">VR Body</div>
-                <!-- Edit project description -->
-                <div class="text3">
-                    For more Realistic feeling of VR, we need to make a player body
-                    that all parts are connected to each other instead of just a head and 
-                    void hands. This project is to make a body that can be used in VR.
-                </div>
+
             </div>
-           
         </div>
 
         <div id="page-content" class="page">
             <!-- Edit project content -->
             <div class="text3">
-                <span class="bold">Follow tutorial to make a test body</span>
+                <span class="bold">Player Full Body Test</span>
                 <br><br>
-                <div>
-                    folowing tutorial with a <a href="https://www.youtube.com/watch?v=tBYl-aSxUe0&t=614s">youtube video</a>
-                    we set up an rig body with 3D model download from <a href="https://assetstore.unity.com/packages/3d/characters/robots/space-robot-kyle-4696">unity asset store</a>.
-                </div>      
+                Following a <a href="https://youtu.be/tBYl-aSxUe0">tutorial</a> on Youtube, we set up an rigged body with 3D model downloaded from <a href="https://assetstore.unity.com/packages/3d/characters/robots/space-robot-kyle-4696">Unity Asset Store</a>.
             </div>
-
             <div class="flexdiv">
                 <a href="./src/000img.jpg"><img src="./src/000img.jpg" alt="" class="flexchild"></a>
             </div>
-
             <div class="text3">
-                <div>
-                    first step will be import animation rigging from unity packages.
-                </div>      
+                The first step will be to import animation rigging from unity packages.
             </div>
-
             <div class="flexdiv">
                 <a href="./src/001img.jpg"><img src="./src/001img.png" alt="" class="flexchild"></a>
             </div>
-
             <div class="text3">
-                <div>
-                    There are many easy functions in the package to set up the rigging for us.
-                    simply click on "Rig Setup" and "Bone Renderer Setup", the rigging will be set up.
-                </div>      
+                There are many components in the package that can help us set up the rigging for us, by simply clicking on "Rig Setup" and "Bone Renderer Setup".
             </div>
-
             <div class="flexdiv">
                 <a href="./src/002img.jpg"><img src="./src/002img.png" alt="" class="flexchild"></a>
             </div>
-
             <div class="text3">
-                <div>
-                    Here you go, we can see the bones of the rigging, and all parts are connected to each other.
-                    Even if we pull some of his body parts, it will still be connected.
-                </div>      
+                Here you go, we can see the bones of the rigging, and all parts are connected to each other. Even if we pull on some of his body parts, it will still be connected.
             </div>
 
             <div class="flexdiv">
@@ -82,11 +56,7 @@
             </div>
 
             <div class="text3">
-                <div>
-                    However, the arms are not connected as we expected.
-                    Following the tutorial, we added "Two Bones IK Constraint" to help us determine 
-                    the position of the arm while we move the hand. 
-                </div>      
+                However, the arms are not connected as we expected. Following the tutorial, we added "Two Bones IK Constraint" to help us determine the position of the arms while we are moving the hand.
             </div>
 
             <div class="flexdiv">
@@ -95,11 +65,7 @@
             </div>
 
             <div class="text3">
-                <div>
-                    Before we go in our VR body, we need to set Constraints 
-                    for the Vr controller to align with the body.
-                    For this part, we need to write our own script.
-                </div>      
+                Before we go into our VR body, we need to set Constraints for the VR controllers, aligning them with the body. For this part, we need to write our own script.
             </div>
 
             <div class="flexdiv">
@@ -107,11 +73,10 @@
             </div>
 
             <div class="text3">
-                <div>
-                    Now we can move around in our VR body without any problem.
-                </div>      
+                Now we can move around in our VR body without any problem.
             </div>
-            <video src="./src/001vid.mp4" controls></video>
+            <br>
+            <video src="./src/001vid.mp4" autoplay loop controls></video>
         </div>
         </div>
     </div>

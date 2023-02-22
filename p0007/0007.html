@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Edit page title -->
+    <title>Unity Rendering</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- Edit style sheet link -->
+    <link rel="stylesheet" href="./0007.css">
+</head>
+<body>
+    <div id="header">
+        <!-- Edit site title -->
+        <a href="../index.html" id="logo">Simulated | Spring 2023</a>    
+    </div>
+    <div class="pages">
+
+        <div class="page darkBG">
+            <!-- Edit project content -->
+            <div class="vertMedia">
+                <div class="text3">
+                    <span class="bold">Particle System Material</span>
+                    <a href="./src/003img.png"><img src="./src/003img.png" alt="" class="vid"></a>
+                </div>
+                <div class="text3">
+                    <span class="bold">Particle System Component</span>
+                    <a href="./src/001img.png"><img src="./src/001img.png" alt="" class="vid"></a>
+                </div>
+                <div class="text3">
+                    <span class="bold">Particle System Effect</span>
+                    <a href="./src/002vid.mp4"><video src="./src/002vid.mp4" autoplay loop class="vid" controls></video></a>
+                </div>
+            </div>
+            <div class="vertTxt">
+                <!-- Edit project title -->
+                <div class="text1">Unity Particle System</div>
+                <!-- Edit project description -->
+                <div class="text3">
+                    After exporting a blender animation of a spinning cube into FBX, we imported the file into Unity and used it as a volume for particle generation. This technique is useful for our game because there will be scenes that are holographic. These are called the holographic archive. One of the main goal of the game is to unlock these archives and gather information from them in order to progress. These archives are non-interactive, and the player will have a more limited range of motion. These archives can be unlocked by completing puzzles, and the player can enter by walking through a portal that is pulled up from the ground or wall. Within these archives, animated scenes rendered in holographic style will appear before the player, giving them information about the game world and clue for the next puzzle.
+                    <br><br>
+                    When implementing this, we first created a material that is rendered with the URP/Particles/Lit shader. It emits a light blue color. The material is dragged into the Particle System Component that we attached to the animated object to replace the mesh renderer. We played around with the Lifetime, Emission Rate, and Speed, allowing the particles to have a slight movement even when the mesh is static.
+                    <br><br>
+                    The next step would be to alter the individual particle's material based on a texture map. It could probably change the particle's color, brightness, or density. 
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </body>
+</html>

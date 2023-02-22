@@ -36,7 +36,7 @@
             <div class="text3">
                 <span class="bold">Reason</span>
                 <br><br>
-                Our Character robot will start with only one eye, and later on, the player will have to find a way to get the other eye back to unlock the full sight, otherwise the player will experience a limited sight through VR HeadSet.
+                Our Character robot will start with only one eye, and later on, the player will have to find a way to unlock the other eye, otherwise the player will experience a limited sight through VR HeadSet.
             </div>
 
             <div class="flexdiv">
@@ -46,9 +46,9 @@
             <div class="text3">
                 <span class="bold">How to implement</span>
                 <br><br>
-                To have one missing eye, we will have to use 2 cameras instead of one to mimic the missing eye. Each camera will be set to target an eye.
+                To have one missing eye, we will have to use 2 cameras instead of one to mimic the missing eye. Each camera will be set to target one eye.
                 <br><br>
-                for the missing eye, wewill first need to set "Clear Flags" to "Solid Color" and set the color to black. Then we will need to set the "Culling Mask" to "Nothing" to make sure the camera will not render anything.
+                For the missing eye, we will first need to set "Clear Flags" to "Solid Color" and set the color to black. Then we will need to set the "Culling Mask" to "Nothing" to make sure the camera will not render anything.
                 <br><br>
                 Later when we get the missing eye back we will set "Clear Flags" to "Skybox" and set the "Culling Mask" to "Everything" to make sure the camera will render everything.
             </div>
